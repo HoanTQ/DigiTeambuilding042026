@@ -447,6 +447,9 @@
             display: none; background: none; border: none; color: var(--white);
             font-size: 1.4rem; cursor: pointer; padding: 8px;
         }
+        .navbar-logo-right {
+            height: 56px; flex-shrink: 0;
+        }
 
         @media (max-width: 768px) {
             section { padding: 60px 0; }
@@ -457,6 +460,7 @@
             .ksp-grid, .rooms-grid { grid-template-columns: 1fr; }
             .activities-grid { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
             .navbar-toggle { display: block; }
+            .navbar-logo-right { display: none; }
             .navbar-links {
                 display: none; position: absolute; top: 56px; left: 0; right: 0;
                 background: rgba(27, 94, 32, 0.98); flex-direction: column;
@@ -485,6 +489,7 @@
                 <li><a href="#cost">Chi phí</a></li>
                 <li><a href="#notes">Lưu ý</a></li>
             </ul>
+            <img src="image/logo Digi.png" alt="Digi" class="navbar-logo-right">
         </div>
     </nav>
 
